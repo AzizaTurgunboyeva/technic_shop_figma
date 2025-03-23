@@ -3,77 +3,643 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Phono Shop</title>
     <link rel="stylesheet" href="./css/style.css" />
-    <title>Shop</title>
   </head>
   <body>
-    <section>
+    <!-- 1. NAVBAR (header) -->
+    <header class="header-nav">
       <nav class="nav_main">
-        <div class="container">
-          <div class="navbar">
-            <div class="navbar__container">
-              <h5>Phono</h5>
-              <div class="icons">
-                <div class="icons__locate">
+        <!-- Navbarni markazga jamlash uchun container -->
+        <div class="container nav-container">
+          <div class="navbar__container">
+            <h5>Phono</h5>
+            <div class="icons">
+              <div class="icons__locate">
+                <div class="icon1">
                   <img
                     class="image"
                     src="./assets/email-stats.png"
                     alt="mail"
                   />
-                  <p>Сообщения</p>
-
-                  <img class="image" src="./assets/heart.png" alt="heart" />
-
-                  <img class="image" src="./assets/user.png" alt="user" />
-                  <p>Ваш профиль</p>
-                  <img
-                    class="arrow"
-                    src="./assets/chevron-down.png"
-                    alt="drop-down"
-                  />
-
-                  <button class="add" type="button">Добавить объявление</button>
+                  <p class="icons__text">Сообщения</p>
                 </div>
+                <img class="image" src="./assets/heart.png" alt="heart" />
+                <div class="icon1">
+                  <img class="image" src="./assets/user.png" alt="user" />
+                  <p class="icons__text">Ваш профиль</p>
+                </div>
+                <img
+                  class="arrow"
+                  src="./assets/chevron-down.png"
+                  alt="drop-down"
+                />
               </div>
+              <button class="header__icon-container">
+                Добавить объявление
+              </button>
             </div>
           </div>
-            <section class="header__container">
-                <div class="header__input__main">
-                    <div class="header__input"> 
-                        <div class="header__input__search__btn"> 
-                            <img   src="./assets/Generic.png" alt="search_btn">
-                        </div>
-                        <div class="header__input__search__text">
-                            <p>Type e.g Slots games</p>
-                        </div>
-                    </div>
-                    <div class="header__input_image">
-                                    <img src="./assets/Software.png" alt="software">     
-                    </div>
-                    <button  class="header__input__search" type="submit">Поиск</button>
-                </div>         
-            </section>
-           
-          <!-- <div class="category">
-            <h3>Category</h3>
-            <div class="logos">
-              <div class="brand">1</div>
-              <div class="brand">2</div>
-              <div class="brand">3</div>
-              <div class="brand">4</div>
-              <div class="brand">5</div>
-              <div class="brand">6</div>
-              <div class="brand">7</div>
-              <div class="brand">8</div>
-              <div class="brand">9</div>
-              <div class="brand">10</div>
-              <div class="brand">11</div>
-              <div class="brand">12</div>
-            </div>
-          </div> -->
-        </div> 
         </div>
       </nav>
+    </header>
+
+    <!-- 2. QIDIRUV (search) QISMI -->
+    <section class="search-section">
+      <div class="container">
+        <div class="header__input__main">
+          <div class="input__box">
+            <input
+              class="header__input"
+              type="text"
+              placeholder="Type e.g Slots games"
+            />
+          </div>
+          <div class="header__input_image">
+            <img src="./assets/Software.png" alt="software" />
+          </div>
+          <div class="header__input__search">
+            <div class="header__input__search_text">Поиск</div>
+          </div>
+        </div>
+      </div>
     </section>
+
+    <!-- 3. KATEGORIYALAR QISMI -->
+    <section class="category-section">
+      <div class="container">
+        <h2 class="category-container__title">Категории</h2>
+        <div class="category-container__categories-grid">
+          <!-- 1-qator -->
+          <div class="categories-grid__brands">
+            <div class="image-wrap">
+              <img
+                src="./assets/category-icons/iphone.svg"
+                alt="iphone"
+                class="image"
+              />
+            </div>
+            <p>Apple</p>
+          </div>
+
+          <div class="categories-grid__brands">
+            <div class="image-wrap">
+              <img
+                src="./assets/category-icons/huawei.svg"
+                alt="huawei"
+                class="image"
+              />
+            </div>
+
+            <p>HUAWEI</p>
+          </div>
+
+          <div class="categories-grid__brands">
+            <div class="image-wrap">
+              <img
+                src="./assets/category-icons/Xiaomi_logo_(2021-) 1.svg"
+                alt="xiomi"
+                class="image"
+              />
+            </div>
+
+            <p>Xiaomi</p>
+          </div>
+
+          <div class="categories-grid__brands">
+            <div class="image-wrap">
+              <img
+                src="./assets/category-icons/samsung.png"
+                alt="samsung"
+                class="image"
+              />
+            </div>
+
+            <p>Samsung</p>
+          </div>
+
+          <div class="categories-grid__brands">
+            <div class="image-wrap">
+              <img
+                src="./assets/category-icons/blackview.png"
+                alt="blackview"
+                class="image"
+              />
+            </div>
+
+            <p>Blackview</p>
+          </div>
+
+          <div class="categories-grid__brands">
+            <div class="image-wrap">
+              <img
+                src="./assets/category-icons/Philips_logo 1.png"
+                alt="philips"
+                class="image"
+              />
+            </div>
+
+            <p>Philips</p>
+          </div>
+
+          <!-- 2-qator -->
+          <div class="categories-grid__brands">
+            <div class="image-wrap">
+              <img
+                src="./assets/category-icons/Xiaomi_logo_(2021-) 1.svg"
+                alt="xiomi"
+                class="image"
+              />
+            </div>
+
+            <p>Xiaomi</p>
+          </div>
+
+          <div class="categories-grid__brands">
+            <div class="image-wrap">
+              <img
+                src="./assets/category-icons/iphone.svg"
+                alt="iphone"
+                class="image"
+              />
+            </div>
+
+            <p>Apple</p>
+          </div>
+          <div class="categories-grid__brands">
+            <div class="image-wrap">
+              <img
+                src="./assets/category-icons/blackview.png"
+                alt="blackview"
+                class="image"
+              />
+            </div>
+
+            <p>Blackview</p>
+          </div>
+          <div class="categories-grid__brands">
+            <div class="image-wrap">
+              <img
+                src="./assets/category-icons/samsung.png"
+                alt="samsung"
+                class="image"
+              />
+            </div>
+
+            <p>Samsung</p>
+          </div>
+
+          <div class="categories-grid__brands">
+            <div class="image-wrap">
+              <img
+                src="./assets/category-icons/huawei.svg"
+                alt="huawei"
+                class="image"
+              />
+            </div>
+
+            <p>HUAWEI</p>
+          </div>
+          <div class="categories-grid__brands">
+            <div class="image-wrap">
+              <img
+                src="./assets/category-icons/ph_plus-bold.svg"
+                alt="plus"
+                class="image"
+              />
+            </div>
+
+            <p>Смотреть все</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="card-container">
+      <div class="container">
+        <h2 class="category-container__title">Объявления</h2>
+        <div class="card-container__wrapper">
+          <!-- card -->
+          <div class="card">
+            <img
+              class="card__image"
+              src="./assets/images/xiomi.png"
+              alt="card-image"
+            />
+            <div class="card__title">
+              <h5 class="card__title__model">Xiaomi Redmi Note 12</h5>
+              <img src="./assets/card-heart.png" alt="heart" />
+            </div>
+            <div class="card__title__information-top">
+              <p class="top-text">Состояние:</p>
+              <p class="top-text_next">Новый</p>
+            </div>
+            <div class="card__title__information-top">
+              <p class="top-text">Память:</p>
+              <p class="top-text__number">64 GB</p>
+            </div>
+            <div class="card__title__sum">1 680 000 UZS</div>
+          </div>
+          <!-- card -->
+          <div class="card">
+            <img
+              class="card__image"
+              src="./assets/images/ultra-back.png"
+              alt="card-image"
+            />
+            <div class="card__title">
+              <h5 class="card__title__model">Samsung Galaxy S22 Ultra</h5>
+              <img src="./assets/card-heart.png" alt="heart" />
+            </div>
+            <div class="card__title__information-top">
+              <p class="top-text">Состояние:</p>
+              <p class="top-text_next">Новый</p>
+            </div>
+            <div class="card__title__information-top">
+              <p class="top-text">Память:</p>
+              <p class="top-text__number">64 GB</p>
+            </div>
+            <div class="card__title__sum">1 680 000 UZS</div>
+          </div>
+          <!-- card -->
+          <div class="card">
+            <img
+              class="card__image"
+              src="./assets/images/iphone.png"
+              alt="card-image"
+            />
+            <div class="card__title">
+              <h5 class="card__title__model">Apple iPhone SE</h5>
+              <img src="./assets/card-heart.png" alt="heart" />
+            </div>
+            <div class="card__title__information-top">
+              <p class="top-text">Состояние:</p>
+              <p class="top-text_next">Новый</p>
+            </div>
+            <div class="card__title__information-top">
+              <p class="top-text">Память:</p>
+              <p class="top-text__number">64 GB</p>
+            </div>
+            <div class="card__title__sum">1 680 000 UZS</div>
+          </div>
+          <!-- card -->
+          <div class="card">
+            <img
+              class="card__image"
+              src="./assets/images/ultra.png"
+              alt="card-image"
+            />
+            <div class="card__title">
+              <h5 class="card__title__model">Samsung Galaxy S22 Ultra</h5>
+              <img src="./assets/card-heart.png" alt="heart" />
+            </div>
+            <div class="card__title__information-top">
+              <p class="top-text">Состояние:</p>
+              <p class="top-text_next">Новый</p>
+            </div>
+            <div class="card__title__information-top">
+              <p class="top-text">Память:</p>
+              <p class="top-text__number">64 GB</p>
+            </div>
+            <div class="card__title__sum">1 680 000 UZS</div>
+          </div>
+          <!-- -------------------------------------------------------------------------------- -->
+          <!-- card -->
+
+          <div class="card">
+            <img
+              class="card__image"
+              src="./assets/images/ultra-back.png"
+              alt="card-image"
+            />
+            <div class="card__title">
+              <h5 class="card__title__model">Samsung Galaxy S22 Ultra</h5>
+              <img src="./assets/card-heart.png" alt="heart" />
+            </div>
+            <div class="card__title__information-top">
+              <p class="top-text">Состояние:</p>
+              <p class="top-text_next">Новый</p>
+            </div>
+            <div class="card__title__information-top">
+              <p class="top-text">Память:</p>
+              <p class="top-text__number">64 GB</p>
+            </div>
+            <div class="card__title__sum">1 680 000 UZS</div>
+          </div>
+
+          <!-- card -->
+
+          <div class="card">
+            <img
+              class="card__image"
+              src="./assets/images/xiomi.png"
+              alt="card-image"
+            />
+            <div class="card__title">
+              <h5 class="card__title__model">Xiaomi Redmi Note 12</h5>
+              <img src="./assets/card-heart.png" alt="heart" />
+            </div>
+            <div class="card__title__information-top">
+              <p class="top-text">Состояние:</p>
+              <p class="top-text_next">Новый</p>
+            </div>
+            <div class="card__title__information-top">
+              <p class="top-text">Память:</p>
+              <p class="top-text__number">64 GB</p>
+            </div>
+            <div class="card__title__sum">1 680 000 UZS</div>
+          </div>
+          <div class="card">
+            <img
+              class="card__image"
+              src="./assets/images/iphone.png"
+              alt="card-image"
+            />
+            <div class="card__title">
+              <h5 class="card__title__model">Apple iPhone SE</h5>
+              <img src="./assets/card-heart.png" alt="heart" />
+            </div>
+            <div class="card__title__information-top">
+              <p class="top-text">Состояние:</p>
+              <p class="top-text_next">Новый</p>
+            </div>
+            <div class="card__title__information-top">
+              <p class="top-text">Память:</p>
+              <p class="top-text__number">64 GB</p>
+            </div>
+            <div class="card__title__information-bottom">
+              <h5 class="card__title__sum">1 680 000 UZS</h5>
+              <div class="tog"><p class="tog-text">Торг есть</p></div>
+            </div>
+          </div>
+          <!-- card -->
+          <div class="card">
+            <img
+              class="card__image"
+              src="./assets/images/ultra.png"
+              alt="card-image"
+            />
+            <div class="card__title">
+              <h5 class="card__title__model">Samsung Galaxy S22 Ultra</h5>
+              <img src="./assets/card-heart.png" alt="heart" />
+            </div>
+            <div class="card__title__information-top">
+              <p class="top-text">Состояние:</p>
+              <p class="top-text_next">Новый</p>
+            </div>
+            <div class="card__title__information-top">
+              <p class="top-text">Память:</p>
+              <p class="top-text__number">64 GB</p>
+            </div>
+            <div class="card__title__sum">1 680 000 UZS</div>
+          </div>
+          <!-- -------------------------------------------------------------------------------- -->
+
+          <!-- card -->
+          <div class="card">
+            <img
+              class="card__image"
+              src="./assets/images/ultra.png"
+              alt="card-image"
+            />
+            <div class="card__title">
+              <h5 class="card__title__model">Samsung Galaxy S22 Ultra</h5>
+              <img src="./assets/card-heart.png" alt="heart" />
+            </div>
+            <div class="card__title__information-top">
+              <p class="top-text">Состояние:</p>
+              <p class="top-text_next">Новый</p>
+            </div>
+            <div class="card__title__information-top">
+              <p class="top-text">Память:</p>
+              <p class="top-text__number">64 GB</p>
+            </div>
+            <div class="card__title__sum">1 680 000 UZS</div>
+          </div>
+          <!-- card -->
+          <div class="card">
+            <img
+              class="card__image"
+              src="./assets/images/iphone.png"
+              alt="card-image"
+            />
+            <div class="card__title">
+              <h5 class="card__title__model">Apple iPhone SE</h5>
+              <img src="./assets/card-heart.png" alt="heart" />
+            </div>
+            <div class="card__title__information-top">
+              <p class="top-text">Состояние:</p>
+              <p class="top-text_next">Новый</p>
+            </div>
+            <div class="card__title__information-top">
+              <p class="top-text">Память:</p>
+              <p class="top-text__number">64 GB</p>
+            </div>
+            <div class="card__title__information-bottom">
+              <h5 class="card__title__sum">1 680 000 UZS</h5>
+            </div>
+          </div>
+          <!-- card -->
+          <div class="card">
+            <img
+              class="card__image"
+              src="./assets/images/xiomi.png"
+              alt="card-image"
+            />
+            <div class="card__title">
+              <h5 class="card__title__model">Xiaomi Redmi Note 12</h5>
+              <img src="./assets/card-heart.png" alt="heart" />
+            </div>
+            <div class="card__title__information-top">
+              <p class="top-text">Состояние:</p>
+              <p class="top-text_next">Новый</p>
+            </div>
+            <div class="card__title__information-top">
+              <p class="top-text">Память:</p>
+              <p class="top-text__number">64 GB</p>
+            </div>
+            <div class="card__title__sum">1 680 000 UZS</div>
+          </div>
+
+          <div class="card">
+            <img
+              class="card__image"
+              src="./assets/images/ultra.png"
+              alt="card-image"
+            />
+            <div class="card__title">
+              <h5 class="card__title__model">Samsung Galaxy S22 Ultra</h5>
+              <img src="./assets/card-heart.png" alt="heart" />
+            </div>
+            <div class="card__title__information-top">
+              <p class="top-text">Состояние:</p>
+              <p class="top-text_next">Новый</p>
+            </div>
+            <div class="card__title__information-top">
+              <p class="top-text">Память:</p>
+              <p class="top-text__number">64 GB</p>
+            </div>
+            <div class="card__title__information-bottom">
+              <h5 class="card__title__sum">1 680 000 UZS</h5>
+              <div class="tog"><p class="tog-text">Торг есть</p></div>
+            </div>
+          </div>
+          <!-- -------------------------------------------------------------------------------- -->
+          <div class="card">
+            <img
+              class="card__image"
+              src="./assets/images/iphone.png"
+              alt="card-image"
+            />
+            <div class="card__title">
+              <h5 class="card__title__model">Apple iPhone SE</h5>
+              <img src="./assets/card-heart.png" alt="heart" />
+            </div>
+            <div class="card__title__information-top">
+              <p class="top-text">Состояние:</p>
+              <p class="top-text_next">Новый</p>
+            </div>
+            <div class="card__title__information-top">
+              <p class="top-text">Память:</p>
+              <p class="top-text__number">64 GB</p>
+            </div>
+            <div class="card__title__information-bottom">
+              <h5 class="card__title__sum">1 680 000 UZS</h5>
+              <div class="tog"><p class="tog-text">Торг есть</p></div>
+            </div>
+          </div>
+          <!-- card -->
+          <div class="card">
+            <img
+              class="card__image"
+              src="./assets/images/ultra-back.png"
+              alt="card-image"
+            />
+            <div class="card__title">
+              <h5 class="card__title__model">Samsung Galaxy S22 Ultra</h5>
+              <img src="./assets/card-heart.png" alt="heart" />
+            </div>
+            <div class="card__title__information-top">
+              <p class="top-text">Состояние:</p>
+              <p class="top-text_next">Новый</p>
+            </div>
+            <div class="card__title__information-top">
+              <p class="top-text">Память:</p>
+              <p class="top-text__number">64 GB</p>
+            </div>
+            <div class="card__title__sum">1 680 000 UZS</div>
+          </div>
+          <!-- card -->
+          <div class="card">
+            <img
+              class="card__image"
+              src="./assets/images/ultra.png"
+              alt="card-image"
+            />
+            <div class="card__title">
+              <h5 class="card__title__model">Samsung Galaxy S22 Ultra</h5>
+              <img src="./assets/card-heart.png" alt="heart" />
+            </div>
+            <div class="card__title__information-top">
+              <p class="top-text">Состояние:</p>
+              <p class="top-text_next">Новый</p>
+            </div>
+            <div class="card__title__information-top">
+              <p class="top-text">Память:</p>
+              <p class="top-text__number">64 GB</p>
+            </div>
+            <div class="card__title__sum">1 680 000 UZS</div>
+          </div>
+
+          <!-- card -->
+          <div class="card">
+            <img
+              class="card__image"
+              src="./assets/images/xiomi.png"
+              alt="card-image"
+            />
+            <div class="card__title">
+              <h5 class="card__title__model">Xiaomi Redmi Note 12</h5>
+              <img src="./assets/card-heart.png" alt="heart" />
+            </div>
+            <div class="card__title__information-top">
+              <p class="top-text">Состояние:</p>
+              <p class="top-text_next">Новый</p>
+            </div>
+            <div class="card__title__information-top">
+              <p class="top-text">Память:</p>
+              <p class="top-text__number">64 GB</p>
+            </div>
+            <div class="card__title__sum">1 680 000 UZS</div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- footer -->
+    <footer class="footer">
+      <div class="container footer__container">
+        <!-- Chap tomonda Phono va linklar -->
+        <div class="footer__left">
+          <h2 class="footer__title">Phono</h2>
+          <nav class="footer__nav">
+            <ul class="footer__links">
+              <li><a href="#">Мобильное приложение</a></li>
+              <li><a href="#">Условия использования</a></li>
+              <li><a href="#">Правила безопасности</a></li>
+              <li><a href="#">Помощь</a></li>
+              <li><a href="#">Политика конфиденциальности</a></li>
+              <li><a href="#">Карта сайта</a></li>
+              <li><a href="#">Платные услуги</a></li>
+              <li><a href="#">Партнеры</a></li>
+              <li><a href="#">Карта регионов</a></li>
+              <li><a href="#">Реклама на сайте</a></li>
+              <li><a href="#">Как продавать и покупать?</a></li>
+              <li><a href="#">Карьера в Phono</a></li>
+            </ul>
+          </nav>
+        </div>
+
+        <!-- App Store va ijtimoiy tarmoq ikonlari -->
+        <div class="footer__right">
+          <!-- AppStore, Google Play ikonlari -->
+          <div class="footer__stores">
+            <a href="#" class="footer__store-link">
+              <img
+                src="./assets/footer-icon/app-store.png"
+                alt="App Store"
+                class="footer__store-icon"
+              />
+            </a>
+            <!--  ikonlari -->
+            <div class="footer__socials">
+              <a href="#"
+                ><img
+                  class="footer-icon"
+                  src="./assets/footer-icon/youtube.png"
+                  alt="YouTube"
+              /></a>
+              <a href="#"
+                ><img
+                  class="footer-icon"
+                  src="./assets/footer-icon/Mask group.png"
+                  alt="VK"
+              /></a>
+              <a href="#"
+                ><img
+                  class="footer-icon"
+                  src="./assets/footer-icon/telegram.png"
+                  alt="Telegram"
+              /></a>
+              <a href="#"
+                ><img
+                  class="footer-icon"
+                  src="./assets/footer-icon/odnaklasnik.png"
+                  alt="Instagram"
+              /></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
